@@ -1,86 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GwpWork | Professional Video Editor</title>
+<title>GwpWork | Video Editor</title>
 
-<style>
 <style>
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#0f0c29,#1a1f3c,#000);
     color: white;
     text-align: center;
-    background: linear-gradient(135deg, #0f0c29, #1a1f3c, #000000);
-    overflow-x: hidden;
 }
-
-/* Animated Trading Lines Background */
-body::before {
-    content: "";
-    position: fixed;
-    width: 200%;
-    height: 200%;
-    background: repeating-linear-gradient(
-        90deg,
-        rgba(0,255,150,0.05) 0px,
-        rgba(0,255,150,0.05) 2px,
-        transparent 2px,
-        transparent 100px
-    );
-    animation: moveLines 15s linear infinite;
-    z-index: -1;
-}
-
-@keyframes moveLines {
-    from { transform: translateX(0); }
-    to { transform: translateX(-200px); }
-}
-
-/* Neon Glow Effect */
-h1, h2 {
-    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
-}
-
-/* Card Style */
-.card {
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 20px;
-    width: 260px;
-    box-shadow: 0 0 15px rgba(0,255,200,0.4);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(0,255,200,0.8);
-}
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    margin: 15px;
-    border-radius: 30px;
-    text-decoration: none;
-    background: linear-gradient(45deg, #00ffcc, #00ccff);
-    color: black;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-}
-
-/* Sections */
-section {
-    padding: 60px 20px;
-}
-</style>
 
 header {
     padding: 60px 20px;
@@ -88,7 +18,7 @@ header {
 
 h1 {
     font-size: 40px;
-    margin-bottom: 10px;
+    color: #00ffcc;
 }
 
 p {
@@ -98,83 +28,54 @@ p {
 .btn {
     display: inline-block;
     padding: 12px 25px;
-    margin: 15px;
     border-radius: 30px;
-    text-decoration: none;
-    background: #22c55e;
+    background: #00ffcc;
     color: black;
+    text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #16a34a;
 }
 
 section {
     padding: 50px 20px;
 }
 
-.services, .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
+.services div, .portfolio div {
     background: #1e293b;
     padding: 20px;
-    border-radius: 15px;
+    margin: 10px auto;
+    border-radius: 10px;
     width: 250px;
 }
-
-footer {
-    padding: 20px;
-    background: #020617;
-    color: gray;
-}
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>GwpWork</h1>
-    <h2>Professional Short Video Editor</h2>
-    <p>I create viral YouTube Shorts & Instagram Reels that increase views and engagement.</p>
-    <a href="#contact" class="btn">Hire Me</a>
+<h1>GwpWork</h1>
+<h2>Professional Short Video Editor</h2>
+<p>I create viral Gaming & Trading Shorts</p>
+<a href="#" class="btn">Hire Me</a>
 </header>
 
 <section>
-    <h2>My Services</h2>
-    <div class="services">
-        <div class="card">YouTube Shorts Editing</div>
-        <div class="card">Instagram Reels Editing</div>
-        <div class="card">Trading / Finance Video Editing</div>
-        <div class="card">Gaming Shorts Editing</div>
-    </div>
+<h2>My Services</h2>
+<div class="services">
+<div>YouTube Shorts Editing</div>
+<div>Instagram Reels Editing</div>
+<div>Trading / Finance Editing</div>
+<div>Gaming Shorts Editing</div>
+</div>
 </section>
 
 <section>
-    <h2>My Work</h2>
-    <div class="portfolio">
-        <div class="card">Sample Video 1</div>
-        <div class="card">Sample Video 2</div>
-        <div class="card">Sample Video 3</div>
-    </div>
+<h2>My Work</h2>
+<div class="portfolio">
+<div>Sample Video 1</div>
+<div>Sample Video 2</div>
+</div>
 </section>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: gwpandabusiness@gmail.com</p>
-    <p>WhatsApp: +91 7638872315</p>
-    <a href="https://instagram.com/jubaed_ahmed93" class="btn">Instagram DM</a>
-</section>
-
-<footer>
-    © 2026 Gwpanda | All Rights Reserved
-</footer>
 
 </body>
 </html>
