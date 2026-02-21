@@ -14,25 +14,48 @@ body{
     overflow-x:hidden;
 }
 
-/* Animated background grid */
+<style>
+
+/* Animated Grid + Graph Lines */
+
 body::before{
     content:"";
     position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    linear-gradient(rgba(0,255,200,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,200,0.08) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index:-2;
+}
+
+/* Trading Graph Line */
+body::after{
+    content:"";
+    position:fixed;
+    bottom:0;
+    left:0;
     width:200%;
-    height:200%;
-    background: repeating-linear-gradient(
-        90deg,
-        rgba(0,255,200,0.05) 0px,
-        rgba(0,255,200,0.05) 2px,
-        transparent 2px,
-        transparent 80px
+    height:200px;
+    background: linear-gradient(120deg,
+        transparent 0%,
+        #00ffcc 20%,
+        transparent 40%,
+        #00ccff 60%,
+        transparent 80%
     );
-    animation:move 15s linear infinite;
+    opacity:0.4;
+    animation:graphMove 8s linear infinite;
     z-index:-1;
 }
-@keyframes move{
-    from{transform:translateX(0);}
-    to{transform:translateX(-200px);}
+
+@keyframes graphMove{
+    from{ transform: translateX(0); }
+    to{ transform: translateX(-50%); }
+}
+
+</style>
 }
 
 header{
